@@ -1,0 +1,23 @@
+* Create a list of string (5 words) and sort them in descending fashion based on the characters count. 
+* Print the first and last word after the sorting done. 
+
+
+* Create a new method and within that add the switch statement with cases: Add, Subraction, Multiplication and Modulus. 
+* This method should have three arguments (value1, value2, operation) to perform computation based on the swicth case and should return the results. 
+* This method should be called in the Main method and parameters for the computation will be passed along with that.
+* User should have the option in the console screen to choose their arithmetic operation
+* Finally,print the result in the console screen along with the operation chosen.
+
+
+* Create a character array with 15 alphabets(both smaller and upper case characters).
+* Print atleast 15 random strings (with 6 characters in each) without duplication.
+
+
+* Consider this date time format(mm/dd/yyyy hh:mm:ss tt): 12/20/2019 11:30:00 AM
+* Work out and print the above mentioned date and time in the following formats: "20/12/2019", "20-12-2019", "20 December 2019", "December 2019" and "20 December 11:30 AM"
+* Also, print the day of the date given.
+
+
+* Create a dictionary with 5 values.
+* Using LINQ sort the dictionary in an ascending fashion based on the "Key" values and print the first and last item using the same. 
+* Save the result values into the file in local directory.

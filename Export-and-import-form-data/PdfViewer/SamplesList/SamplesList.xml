@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Samples>
+  <Group>
+    <Sample IsUpdated="True" Title="Custom Toolbar" Name="PDFViewerCustomToolbar" IsUpated="True" Icon="AllControlls/PDFViewer.png" EnableStoragePermission="true" />
+  </Group>
+</Samples>

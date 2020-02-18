@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute> 
+   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Export-Import-Annotations-Original.pdf" />
+    <None Remove="Assets\Export-Import-Annotations-Reviewed.pdf" />
+    <None Remove="Assets\Export-Import-Form-Data-Older.pdf" />
+    <None Remove="Assets\Export-Import-Form-Data-Updated.pdf" />
+    <None Remove="SamplesList\SamplesList.xml" />
+	<None Remove="SampleBrowser.SfPdfViewer.Props" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Export-Import-Annotations-Original.pdf" />
+    <EmbeddedResource Include="Assets\Export-Import-Annotations-Reviewed.pdf" />
+    <EmbeddedResource Include="Assets\Export-Import-Form-Data-Older.pdf" />
+    <EmbeddedResource Include="Assets\Export-Import-Form-Data-Updated.pdf" />
+    <EmbeddedResource Include="SamplesList\SamplesList.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SampleBrowser.Core" Version="17.4.0.38" />
+	<PackageReference Include="Syncfusion.Xamarin.Core" Version="17.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="17.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="17.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="17.4.0.38" />
+	<PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="17.4.0.38" />
+	<PackageReference Include="Syncfusion.Xamarin.SfRangeSlider" Version="17.4.0.38" />
+	<PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="17.4.0.38" />
+	<PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="17.4.0.38" />
+	<PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Samples\Helper\StampAnnotationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Samples\PDFViewerCustomToolbar\PDFViewerCustomToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Samples\PDFViewerCustomToolbar\PDFViewerCustomToolbar_Desktop.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Samples\PDFViewerCustomToolbar\PDFViewerCustomToolbar_Phone.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Samples\PDFViewerCustomToolbar\PDFViewerCustomToolbar_Tablet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+</Project>
