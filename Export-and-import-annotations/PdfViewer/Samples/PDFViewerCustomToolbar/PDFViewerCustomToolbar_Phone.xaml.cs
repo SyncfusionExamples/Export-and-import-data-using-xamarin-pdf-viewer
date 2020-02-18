@@ -64,7 +64,6 @@ namespace SampleBrowser.SfPdfViewer
         public PDFViewerCustomToolbar_Phone()
         {            
             InitializeComponent();
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MDAxQDMxMzcyZTM0MmUzMFgzekhKMVJyek9yWkx5Z2xsVXJEWDQrT21pZE9IY0FjbTBrbktDMEpZOFE9");
             pdfViewer = pdfViewerControl;
             string filePath = string.Empty;
 #if COMMONSB
